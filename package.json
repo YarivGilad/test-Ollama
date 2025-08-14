@@ -1,5 +1,5 @@
 {
-  "name": "ts-client",
+  "name": "test-ollama",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,11 +8,24 @@
     "start": "node dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yariv Gilad <yariv.gilad@gmail.com>",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "tsx": "^4.20.4",
     "typescript": "^5.9.2"
-  }
+  },
+  "dependencies": {
+    "esbuild": "^0.25.9",
+    "get-tsconfig": "^4.10.1",
+    "resolve-pkg-maps": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YarivGilad/test-Ollama.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YarivGilad/test-Ollama/issues"
+  },
+  "homepage": "https://github.com/YarivGilad/test-Ollama#readme",
+  "description": "Test Ollama with TypeScript"
 }
