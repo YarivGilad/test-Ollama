@@ -10,8 +10,11 @@ interface OllamaRequest {
     stream: boolean;
 }
 
+const OLLAMA_URL = process.env.OLLAMA_URL ?? 'http://localhost:11434';
+
 async function testOllama(): Promise<void> {
-    const url = "http://localhost:11434/api/generate";
+    
+    const url = `${OLLAMA_URL}/api/generate`;
 
     const payload: OllamaRequest = {
         model: "llama3.2:1b",
